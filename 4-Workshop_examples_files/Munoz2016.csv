@@ -1,0 +1,10 @@
+Common name on label,Expected species,Assignation from DNA in GenBank,Assignation in BOLD,Geographic origin,Sympatry status,Conservation status,Trophic level,Economic gain,Substitution type,Nextcol,Nextcol
+Red Gurnard,Chelidonichthys cuculus,Trigloporus lastoviza (JQ774947.1, 99%),Trigloporus lastoviza (AAB8166, 99.8%),Eastern Atlantic,Sympatric,Not assessed,3.8/3.5,+1.05a,Likely deliberate
+Atlantic Cod,Gadus morhua,Gadus macrocephalus (EU752085.1, 99%),Gadus macrocephalus (AAB3717, 100%),North Pacific,Vicariant,Not assessed,4.1/4.2,+2.43a,Likely deliberate
+Atlantic Cod,Gadus morhua,Molva molva,NA,North Atlantic,Sympatric,Not assessed,4.1/4.4,+2.34b,Likely deliberate,,
+Tope Shark,Galeorhinus galeus,Prionace glauca (JQ654713.1, 99%),Prionace glauca (AAA7096, 100%),Worldwide,Sympatric,Near Threatened,4.3/4.4,+ 3.85a,Likely deliberate
+Anglerfish,Lophius piscatorius,Lophius litulon (EU660706.1, 100%),Lophius litulon (AAC1166, 100%),Western Pacific,Vicariant,Not assessed,4.5/4.1,+ 0.91b,Likely deliberate
+Capelin,Mallotus villosus,Cyclopterus lumpus (AM498314.1, 99%),Cyclopterus lumpus (AAA9151, 99.8%),North Atlantic,Partially sympatric,Not assessed,3.2/3.9,NA,Likely deliberate
+Sardine,Sardina pilchardus,Engraulis encrasicolus (AP009137.1, 100%),Engraulis encrasicolus (AAB2317, 100%),Eastern Atlantic,Sympatric,Least concern,3.1/3.1,+ 0.83b,Likely deliberate
+Alba-core Tuna,Thunnus alalunga,Thunnus obesus (JN086152.1, 100%),Thunnus obesus (AAA7352, 100%),Cosmopolitan,Sympatric,Vulnerable A2bd,4.3/4.5,5.68a,Likely Inadvertent
+Bonito,Thunnus spp.,Katsuwonus pelamis (JN086155.1, 99%),Katsuwonus pelamis (AAA5421, 100%),Cosmopolitan,Sympatric,Least concern,NA,NA,Likely deliberate
