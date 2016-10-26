@@ -128,7 +128,7 @@
 }
 Change some of the YAML settings to see what happens.
 
-Notice, the down arrow at line 22. If you click this, you can hide the R
+Notice, the down arrow at line 25. If you click this, you can hide the R
 code chunk. This is helpful when working through a large document.
 
 On the right side of the R code chunk are additional options, Settings,
@@ -143,16 +143,39 @@ LaTeX)}\label{emphasis-r-markdown-and-latex}
 \emph{Sebastes} \linebreak
 \textbf{Sebastes}
 
+\emph{Sebastes}\\
+\emph{Sebastes}
+
+\emph{Sebastes}
+
+\textbf{\emph{Sebastes}}\\
+\textbf{Sebastes}\\
+\emph{\textbf{Sebastes}}
+
 \section{Headers}\label{headers}
 
+<<<<<<< HEAD
 \subsection*{Subhead}\label{subhead}
 \addcontentsline{toc}{subsection}{Subhead}
+=======
+\subsection{Subhead 2}\label{subhead-2}
+
+\subsubsection{Subhead 3}\label{subhead-3}
+
+\paragraph{Subhead 4}\label{subhead-4}
+
+\emph{Subhead 5}
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
 
 \section{Commenting}\label{commenting}
 
 \section{Links}\label{links}
 
+<<<<<<< HEAD
 \href{http://www.github.com}{Github}
+=======
+\href{www.github.com}{Github}
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
 
 \section{Lists}\label{lists}
 
@@ -172,6 +195,21 @@ R Markdown are finicky with spacing\ldots{}
   \item
     Item 2b
   \end{itemize}
+<<<<<<< HEAD
+=======
+\item
+  Item 1
+\item
+  Item 2
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 2a
+  \item
+    Item 2b
+  \end{itemize}
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
 \end{itemize}
 
 Bulleted list
@@ -198,8 +236,15 @@ Numbered list
 
 We can reference a document section, see Lists in Section \ref{lists}.
 
+<<<<<<< HEAD
 Citations: (Love et al. \protect\hyperlink{ref-Love2002}{2002}) Love
 (\protect\hyperlink{ref-Love2002}{2002})
+=======
+Citations: (Love et al. \protect\hyperlink{ref-Love2002}{2002},
+\protect\hyperlink{ref-Love2002}{2002})
+
+Love (\protect\hyperlink{ref-Love2002}{2002})
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
 
 \section{Figure from a file}\label{figure-from-a-file}
 
@@ -209,6 +254,12 @@ You can use any file extension, including PDFs
 \centering
 \includegraphics{RMarkdownFLow.png}
 \caption{Here's my caption \label{fig:fig_example}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{./Figures/RMarkdownFLow1.png}
+\caption{Here's my caption 2 \label{fig:fig_example2}}
 \end{figure}
 
 Figures are referenced using LaTeX syntax \ref{fig:fig_example}.
@@ -232,7 +283,11 @@ You can embed an R code chunk like this:
 ##  Max.   :25.0   Max.   :120.00
 \end{verbatim}
 
+<<<<<<< HEAD
 Play witht the r code chunk options, echo=TRUE, include=FALSE,
+=======
+Play with the r code chunk options, echo=TRUE, include=FALSE,
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
 results=`asis'
 
 \FloatBarrier
@@ -248,9 +303,23 @@ You can also embed plots, for example:
 \label{fig:pressure}}
 \end{figure}
 
+<<<<<<< HEAD
+=======
+This is inline math mode for Latex \(40^\circ 10^\prime\)
+
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
 Note, you need extra \textbackslash{}s when using LaTeX syntax within an
 R code chunk, or when inserting a backslash in R markdown. The same goes
-with percent signs and any other LaTeX reserved symbol.
+with percent signs and any other LaTeX reserved symbol. You can use a \%
+\(\%\)
+
+We can now reference Figure \ref{fig:pressure}. Note where this text
+ends up.
+
+Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
+chunk to prevent printing of the R code that generated the plot.
+
+\FloatBarrier
 
 \FloatBarrier
 
@@ -267,6 +336,7 @@ chunk to prevent printing of the R code that generated the plot.
 \caption{This is where you write your caption} 
 \label{tab:Table_example}
 \scalebox{0.7}{
+<<<<<<< HEAD
 \begin{tabular}{ccccccccccc}
   \hline
 Sample & Test1 & Test2 & Test3 & Test4 & Test5 & Test6 & Test7 & Test8 & Test9 & Test10 \\ 
@@ -276,6 +346,17 @@ Sample & Test1 & Test2 & Test3 & Test4 & Test5 & Test6 & Test7 & Test8 & Test9 &
    5 & 34.0 & 3333333333.0 &  7 & 2395 & 5632 & 5542 & 1645 & 380.0 & 1263 & 6728 \\ 
    7 & 234.0 & 34.0 & 46 & 5619 & 6063 & 8973 & 9362 & 1870.0 & 7651 & 683 \\ 
    9 & 234.0 & 0.0 & 45 & 6531 & 6824 & 3609 & 7627 & 3363.0 & 1534 & 8333 \\ 
+=======
+\begin{tabular}{crcrcrcrcrc}
+  \hline
+Sample & Test1 & Test2 & Test3 & Test4 & Test5 & Test6 & Test7 & Test8 & Test9 & Test10 \\ 
+  \hline
+1 & 333000000000 & 97 & 45 & 7169 & 5656 & 2642 & 8534 & 9173 & 230 & 2733 \\ 
+  3 & 345 & 976 & 6 & 105 & 6382 & 2277 & 5848 & 7339495403 & 8613 & 5025 \\ 
+  5 & 34 & 3333333333 & 7 & 2395 & 5632 & 5542 & 1645 & 380 & 1263 & 6728 \\ 
+  7 & 234 & 34 & 46 & 5619 & 6063 & 8973 & 9362 & 1870 & 7651 & 683 \\ 
+  9 & 234 & 0 & 45 & 6531 & 6824 & 3609 & 7627 & 3363 & 1534 & 8333 \\ 
+>>>>>>> 6925a730987e15423ebc47d6dd03f0ed4db5c9f5
    \hline
 \end{tabular}
 }
